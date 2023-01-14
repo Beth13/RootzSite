@@ -1,0 +1,155 @@
+@import "./breakpoints.scss";
+@import "./variables.scss";
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 91%;
+  margin: 100px auto 0 auto;
+
+  @include for-large-up {
+    flex-direction: row;
+    width: 80%;
+    padding: 190px 0;
+  }
+
+  &__context {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: auto auto auto 0;
+
+    @include for-medium-up {
+      width: 60%;
+      margin: auto;
+      text-align: center;
+    }
+
+    @include for-large-up {
+      width: 50%;
+      margin: auto 0;
+      text-align: unset;
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 150%;
+      margin: 0;
+      color: $color-title;
+
+      @include for-large-up {
+        font-size: 40px;
+        line-height: 56px;
+      }
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 175%;
+      opacity: 0.9;
+      color: $color-paragraph;
+      margin: 0;
+      margin-top: 20px;
+
+      @include for-large-up {
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+
+    &-button {
+      padding: 0;
+      margin-top: 32px;
+      border: none;
+      border-radius: 30px;
+      background: $button-background;
+      color: $button-text;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 48px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      min-width: 50%;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $button-hover;
+      }
+
+      @include for-medium-up {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @include for-large-up {
+        margin-left: unset;
+        margin-right: unset;
+        width: 30%;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    margin: 48px auto 0 auto;
+
+    @include for-large-up {
+      margin-top: 0px;
+      margin-left: auto;
+      margin: 0 0 0 auto;
+    }
+
+    &_section {
+      border-bottom: 1px solid #1e1a2033;
+
+      @include for-large-up {
+        margin-left: 70px;
+      }
+    }
+
+    &_item {
+      display: flex;
+      margin: auto;
+      width: 100%;
+      justify-content: space-between;
+
+      &-title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        color: $color-paragraph;
+        opacity: 0.9;
+
+        @include for-large-up {
+          font-size: 24px;
+          line-height: 34px;
+        }
+      }
+
+      &-btn {
+        margin: auto 0 auto 30px;
+        border: none;
+        background: $button-background;
+        color: $button-text;
+        border-radius: 50%;
+        font-size: 28px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $button-hover;
+        }
+      }
+    }
+  }
+
+  &__paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.9;
+    $color-paragraph: $color-paragraph;
+  }
+}

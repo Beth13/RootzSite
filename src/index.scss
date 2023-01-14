@@ -1,0 +1,31 @@
+@import "./features/styles/breakpoints.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.page {
+  width: 100%;
+
+  @include for-large-up {
+    display: flex;
+    margin: auto;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+}
+
+@import "./features/styles/header.scss";

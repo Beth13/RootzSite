@@ -1,0 +1,93 @@
+@import "./breakpoints.scss";
+@import "./variables.scss";
+
+.footer {
+  margin-top: auto;
+  background-color: $color-header-footer;
+  text-align: center;
+
+  &__navigation {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 43px 0 42px 0;
+
+    @include for-large-up {
+      flex-wrap: nowrap;
+      padding-bottom: 96px 0 88px 0;
+    }
+
+    &-title {
+      margin-top: 0;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 32px;
+      color: #333333;
+
+      @include for-large-up {
+        font-size: 20px;
+      }
+
+      &__contacts {
+        margin-top: 0;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 48px;
+        text-transform: uppercase;
+        color: #333333;
+
+        @include for-large-up {
+          font-size: 34px;
+        }
+      }
+    }
+
+    &-item {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 24px;
+      color: #333333;
+
+      @include for-large-up {
+        display: block;
+      }
+    }
+
+    &-contacts {
+      width: 100%;
+      margin-bottom: 33px;
+    }
+
+    &-headquarters {
+      width: 50%;
+
+      @include for-large-up {
+        width: 100%;
+      }
+    }
+
+    &-social {
+      width: 50%;
+      @include for-large-up {
+        width: 100%;
+      }
+
+      &__item {
+        margin-right: 13px;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        @include for-large-up {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}

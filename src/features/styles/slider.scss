@@ -1,0 +1,14 @@
+@import "./breakpoints.scss";
+@import "./variables.scss";
+
+.slider {
+  width: 100%;
+  background-color: $color-content;
+  margin-top: 100px;
+  padding-bottom: 50px;
+
+  &__item {
+    margin: 72px 0 25px 0;
+    text-align: center;
+  }
+}

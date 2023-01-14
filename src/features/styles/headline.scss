@@ -1,0 +1,188 @@
+@import "./breakpoints.scss";
+@import "./variables.scss";
+
+.headline {
+  width: 100%;
+  background-color: $color-header-footer;
+
+  @include for-large-up {
+    display: flex;
+    position: relative;
+    margin: auto;
+    padding: 98px 0 79px 0;
+  }
+
+  &__content {
+    padding: 70px 20px 33px 19px;
+
+    @include for-large-up {
+      width: 30%;
+      padding: 30px 0;
+      margin-left: 140px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin: auto;
+
+    @include for-medium-up {
+      text-align: center;
+    }
+
+    @include for-large-up {
+      text-align: unset;
+    }
+
+    &-img {
+      max-width: 290px;
+      max-height: 181px;
+
+      @include for-medium-up {
+        max-width: 435.72px;
+        max-height: 187.74px;
+      }
+
+      @include for-large-up {
+        max-width: 532.72px;
+        max-height: 282.74px;
+      }
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 32px;
+    margin-top: 30px;
+
+    @include for-medium-up {
+      text-align: center;
+    }
+
+    @include for-large-up {
+      font-size: 16px;
+      margin-top: 59px;
+      text-align: unset;
+    }
+  }
+
+  &__actions {
+    margin-top: 30px;
+    padding-bottom: 394px;
+
+    @include for-medium-up {
+      text-align: center;
+    }
+
+    @include for-large-up {
+      text-align: unset;
+      padding: 0;
+      margin-top: 48px;
+    }
+
+    &-loop {
+      display: inline-block;
+      position: absolute;
+      margin: 22px 0px 0px 13px;
+      width: 40px;
+      height: 40px;
+
+      @include for-medium-up {
+        margin: 22px 0px 0px 3px;
+      }
+
+      @include for-large-up {
+        margin: 22px 0px 0px 13px;
+      }
+    }
+
+    &-input {
+      width: 100%;
+      padding: 0 40px 0 40px;
+      height: 64px;
+      border: none;
+      border-radius: 40px;
+
+      @include for-medium-up {
+        width: 90%;
+      }
+
+      @include for-large-up {
+        width: 100%;
+      }
+    }
+
+    &-btn {
+      display: inline-block;
+      position: absolute;
+      margin: 7px 0px 0px -80px;
+      border: none;
+      border-radius: 30px;
+      width: 70px;
+      height: 48px;
+      background-color: $button-background;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      color: $button-text;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $button-hover;
+      }
+
+      @include for-large-up {
+        margin-left: -110px;
+        width: 100px;
+      }
+    }
+  }
+
+  &__banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: -450px 0px 0px 0px;
+    overflow: hidden;
+
+    @include for-medium-up {
+      overflow: unset;
+      margin: -400px 0px 0px 0px;
+    }
+
+    @include for-large-up {
+      position: relative;
+      overflow: unset;
+      width: unset;
+      margin: 0;
+      margin-left: auto;
+      right: 360px;
+      top: 20px;
+    }
+
+    &-parrot {
+      position: absolute;
+      margin: 0px 0px 0px 96px;
+
+      @include for-large-up {
+        margin: -40px 0 0 0;
+        max-width: 400px;
+        max-height: 565px;
+      }
+    }
+
+    &-members {
+      position: relative;
+      margin: 230px 0px 0px 30px;
+      width: 201.41px;
+      height: 245.88px;
+
+      @include for-large-up {
+        margin: 250px 0px 0px -70px;
+        width: 222px;
+        height: 270px;
+      }
+    }
+  }
+}
