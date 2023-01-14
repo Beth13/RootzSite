@@ -1,6 +1,6 @@
 # RootzSite
 
-## [Site Link](https://symphonious-daifuku-f4d6c6.netlify.app/)
+## [Site Link](https://lucky-gaufre-b8f8e1.netlify.app/)
 
 ### Layout supports mobile, tablet and desktop versions
 
